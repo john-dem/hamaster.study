@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VideoHub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🎥 VideoHub</h1>
+</header>
+
+<main class="container">
+  
+  <!-- Video Grid -->
+  <div class="video-grid">
+    
+    <div class="video-card" onclick="playVideo('videos/video1.mp4')">
+      <img src="videos/thumb1.jpg">
+      <p>My First Video</p>
+    </div>
+
+    <div class="video-card" onclick="playVideo('videos/video2.mp4')">
+      <img src="videos/thumb1.jpg">
+      <p>My Second Video</p>
+    </div>
+
+  </div>
+
+  <!-- Player -->
+  <div class="player-box">
+    <video id="player" controls controlsList="nodownload">
+      <source src="" type="video/mp4">
+    </video>
+  </div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
