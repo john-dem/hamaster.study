@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: white;
+}
+
+header {
+  padding: 15px;
+  background: #020617;
+  text-align: center;
+  border-bottom: 1px solid #1e293b;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.video-grid {
+  width: 40%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.video-card {
+  background: #020617;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.video-card:hover {
+  transform: scale(1.05);
+}
+
+.video-card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.video-card p {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.player-box {
+  width: 60%;
+}
+
+video {
+  width: 100%;
+  border-radius: 15px;
+  background: black;
+}
